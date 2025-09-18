@@ -1,7 +1,7 @@
 # Full-Duplex Spoken Language Models (FD-SLMs)
-This is an evolving repo for the survey: From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models, which is under review in A ICASSP 2026. 
+This is an evolving repo for the survey: From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models, which is under review at ICASSP 2026. 
 
-This is a survey, but more than a survey—due to ICASSP's page limitation, we have omitted and abbreviated many technical details, which are highly valuable for guiding the future implementation of a Full-Duplex Spoken Language Model for practical production. Therefore, we will continue to update relevant content at this link.
+This is a survey, but more than a survey —— due to ICASSP's page limitation, we have omitted and abbreviated many technical details, which are highly valuable for guiding the future implementation of a Full-Duplex Spoken Language Model for practical production. Therefore, we will continue to update relevant content at this link.
 
 If you find our survey useful for your research, please 📚cite📚 the following paper:
 
