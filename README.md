@@ -1,4 +1,10 @@
-# FD-SLMs
-A comprehensive survey of Full-Duplex Spoken Language Models (FD-SLMs) - ICASSP 2026. Code, taxonomy, and evaluation framework for cognitive parallelism in conversational AI.
+# Full-Duplex Spoken Language Models (FD-SLMs)
+This is an evolving repo for the survey: From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models, which is under review in A ICASSP 2026. 
 
-Supplementary materials for the code and paper will be released soon
+This is a survey, but more than a survey—due to ICASSP's page limitation, we have omitted and abbreviated many technical details, which are highly valuable for guiding the future implementation of a Full-Duplex Spoken Language Model for practical production. Therefore, we will continue to update relevant content at this link.
+
+If you find our survey useful for your research, please 📚cite📚 the following paper:
+
+If you find any mistakes, please don’t hesitate to open an issue, or contact to yxchen5522@mails.jlu.edu.cn directly.
+
+
