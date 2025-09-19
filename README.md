@@ -5,6 +5,15 @@ This is a survey, but more than a survey —— due to ICASSP's page limitation,
 
 If you find our survey useful for your research, please 📚cite📚 the following paper:
 
+```
+@article{chen2025FD-SLMs,
+  title={From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models},
+  author={Yuxuan Chen, Haoyuan Yu}
+  journal={arXiv preprint arXiv:2509.11415},
+  year={2025}
+}
+```
+
 If you find any mistakes, please don’t hesitate to open an issue, or contact to yxchen5522@mails.jlu.edu.cn directly.
 
-[Figure1.pdf](https://github.com/user-attachments/files/22407793/Figure1.pdf)
+
