@@ -9,7 +9,7 @@ If you find our survey useful for your research, please 📚cite📚 the followi
 @article{chen2025FD-SLMs,
   title={From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models},
   author={Yuxuan Chen, Haoyuan Yu}
-  journal={arXiv preprint arXiv:2509.11415},
+  journal={arXiv preprint arXiv:2509.14515},
   year={2025}
 }
 ```
