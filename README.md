@@ -93,7 +93,7 @@ Based on FD-Bench and Full-Duplex-Bench (v1.5)—especially the latter, for whic
 
 ### Pre-LLM Era Related Research
 
-We believe that in the age of AI, it is more important than ever to honor the foundational work of our predecessors—whose ideas can be revitalized and find new life in the era of large language models, much like how LSTM once revolutionized NLP.In the pre-LLM era, the Spoken Dialogue Systems (SDS) community had long been exploring full-duplex interaction. Therefore, we list a selection of representative works from this line of research and provide brief summaries. We encourage readers to consult the original papers to fully grasp the authors’ ideas.
+We believe that in the age of AI, it is more important than ever to honor the foundational work of our predecessors—whose ideas can be revitalized and find new life in the era of large language models, much like how LSTM once revolutionized NLP. In the pre-LLM era, the Spoken Dialogue Systems (SDS) community had long been exploring full-duplex interaction. Therefore, we list a selection of representative works from this line of research and provide brief summaries. We encourage readers to consult the original papers to fully grasp the authors’ ideas.
 
 ---
 
