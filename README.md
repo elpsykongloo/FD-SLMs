@@ -1,5 +1,6 @@
 # Full-Duplex Spoken Language Models (FD-SLMs)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.14515-b31b1b.svg)](https://arxiv.org/abs/2509.14515)
+
 This is an evolving Github repository for the paper: [From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models [2509.14515]](https://arxiv.org/pdf/2509.14515), which is under review at ICASSP 2026. In this paper, we survey the field of Full-Duplex Spoken Language Models (FD-SLMs), which enable synchronous human–AI dialogue via simultaneous speaking and listening, achieving a more realistic human-computer interaction experience.
 
 ---
