@@ -1,6 +1,6 @@
 # Full-Duplex Spoken Language Models (FD-SLMs)
 
-This is an evolving repo for the survey: From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models[[2509.14515]](https://arxiv.org/pdf/2509.14515), which is under review at ICASSP 2026. 
+This is an evolving repo for the paper: [From Turn-Taking to Synchronous Dialogue: A Survey of Full-Duplex Spoken Language Models [2509.14515]](https://arxiv.org/pdf/2509.14515), which is under review at ICASSP 2026. 
 
 ---
 
