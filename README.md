@@ -29,8 +29,26 @@ In this section, we will list all existing papers on full-duplex SLMs, covering 
 
 #### Models
 
+##### Learned Synchronization ( End-to-End ) :
+
+
+##### Engineered Synchronization ( Modular ) :
+
+
+
+##### Pseudo Full-Duplex :
+
+
+##### Non-independent Models :
+
+
 
 #### Benchmarks
+
+
+---
+
+### Training Datasets
 
 
 ---
