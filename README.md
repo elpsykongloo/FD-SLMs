@@ -85,8 +85,13 @@ We have compiled as comprehensive a list as possible of all existing datasets av
 
 ---
 
-### Pre-LLM Era Related Research
+### Benchmarks
 
+Based on FD-Bench and Full-Duplex-Bench (v1.5)—especially the latter, for which we extend special thanks to Professor Hung-yi Lee—we have developed an even more convenient benchmark built upon the engineering details of the [ICASSP HumDial Challenge](https://aslp-lab.github.io/HumDial-Challenge/). Our goal is to enable as close to one-click evaluation of your model as possible and ultimately provide a quantifiable score. We name this benchmark **Badcat**. For details, please refer to `Badcat-Benchmark/README.md`.
+
+---
+
+### Pre-LLM Era Related Research
 
 
 ---
