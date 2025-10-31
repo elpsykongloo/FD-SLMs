@@ -26,7 +26,9 @@ If you find any mistakes, please don’t hesitate to open an issue, or contact t
 
 ### Taxonomy
 
-> **Note:** A modular implementation does not necessarily imply plug-and-play compatibility with other models—for example, VITA-1.5 and Freeze-Omni.They are end-to-end models and can only be integrated as a whole.
+![Classification Chart](images/Classification%20Chart.png)
+
+> **Note:** A modular implementation does not necessarily imply plug-and-play compatibility with other SLMs—for example, VITA-1.5 and Freeze-Omni. They are end-to-end models and can only be integrated as a whole.
 
 ---
 
