@@ -17,6 +17,13 @@ If you find any mistakes, please don’t hesitate to open an issue, or contact t
 
 ---
 
+### Background
+
+
+
+
+---
+
 ### Taxonomy
 
 
@@ -32,6 +39,7 @@ In this section, we will list all existing papers on full-duplex SLMs, covering 
 ##### Learned Synchronization ( End-to-End ) :
 
 
+
 ##### Engineered Synchronization ( Modular ) :
 
 
@@ -39,9 +47,10 @@ In this section, we will list all existing papers on full-duplex SLMs, covering 
 ##### Pseudo Full-Duplex :
 
 
+
 ##### Non-independent Models :
 
-
+We define non-independent models as either prior or subsequent works from the same author team of an existing model, or fine-tuned variants built upon existing full-duplex models.
 
 #### Benchmarks
 
@@ -85,7 +94,13 @@ We have compiled as comprehensive a list as possible of all existing datasets av
 
 ---
 
-### Benchmarks
+### Training Strategy
+
+
+
+---
+
+### Our Benchmark
 
 Based on FD-Bench and Full-Duplex-Bench (v1.5)—especially the latter, for which we extend special thanks to Professor Hung-yi Lee—we have developed an even more convenient benchmark built upon the engineering details of the [ICASSP HumDial Challenge](https://aslp-lab.github.io/HumDial-Challenge/). Our goal is to enable as close to one-click evaluation of your model as possible and ultimately provide a quantifiable score. We name this benchmark **Badcat**. For details, please refer to `Badcat-Benchmark/README.md`.
 
