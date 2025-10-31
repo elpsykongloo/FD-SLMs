@@ -10,7 +10,7 @@ This repository will now receive regular updates to maintain the most current su
 
 I recently participated in the [ICASSP HumDial Challenge](https://aslp-lab.github.io/HumDial-Challenge/), which temporarily delayed updates to this repository. However, this experience provided valuable insights into full-duplex implementation, particularly regarding modular approaches.
 
-Additionally, several recent full-duplex papers have been published, such as [[2509.02521]](https://arxiv.org/abs/2509.02521), and will be incorporated into upcoming updates.
+Additionally, several recent full-duplex papers have been published, such as FLM-Audio[[2509.02521]](https://arxiv.org/abs/2509.02521), and will be incorporated into upcoming updates.
 
 ---
 
