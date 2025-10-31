@@ -31,4 +31,30 @@ If you find any mistakes, please don’t hesitate to open an issue, or contact t
 
 ---
 
+### Introduction
+
+
+
+---
+
+### Taxonomy
+
+
+
+---
+
+### Existing Papers
+
+Next, we will list all existing papers on full-duplex SLMs, covering both models and benchmarks. 
+
+#### Models
+
+
+#### Benchmarks
+
+
+---
+
+### Pre-LLM Era Related Research
+
 
