@@ -4,7 +4,7 @@ This is an evolving Github repository for the paper: [From Turn-Taking to Synchr
 
 ---
 
-**Update (October 29)** 
+**Update (October 31)** 
 
 This repository will now receive regular updates to maintain the most current survey content.
 
