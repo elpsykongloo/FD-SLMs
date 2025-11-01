@@ -58,7 +58,6 @@ In this section, we will list all existing papers on full-duplex SLMs, covering 
 | 2025 | **VITA‑1.5: Towards GPT‑4o Level Real‑Time Vision and Speech Interaction** | [arXiv:2501.01957](https://arxiv.org/abs/2501.01957)         | [Github](https://github.com/VITA-MLLM/VITA)          | [Huggingface](https://huggingface.co/VITA-MLLM/VITA-1.5)     | Official repo with training/inference; HF hosts VITA‑1.5 weights; tech report describes real‑time vision + speech interaction. ([GitHub](https://github.com/VITA-MLLM/VITA?utm_source=chatgpt.com)) |
 | 2025 | **Smart Turn (project)**                                     | — (project, no formal paper)                                 | [Github](https://github.com/pipecat-ai/smart-turn)   | [Huggingface](https://huggingface.co/pipecat-ai/smart-turn-v3) | BSD‑licensed, community‑driven turn‑detection model (v3) with CPU‑friendly inference and multi‑language support; repo README links the v3 weights and docs. ([GitHub](https://github.com/pipecat-ai/smart-turn)) |
 
-
 ##### 1.3 Pseudo Full-Duplex :
 
 
@@ -107,7 +106,6 @@ We have compiled as comprehensive a list as possible of all existing datasets av
 | Switchboard‑1 Release 2     | EN    | phone        | Paid        | LDC EULA            | 2        | ~260   | [LDC97S62](https://catalog.ldc.upenn.edu/LDC97S62)           |
 | Fisher Spanish Speech       | ES    | phone        | Paid        | LDC EULA            | 2        | ~163   | [LDC2010S01](https://catalog.ldc.upenn.edu/LDC2010S01)       |
 | Fisher Levantine Arabic CTS | AR    | phone        | Paid        | LDC EULA            | 2        | ~45    | [LDC2007S02](https://catalog.ldc.upenn.edu/LDC2007S02)       |
-
 
 ---
 
