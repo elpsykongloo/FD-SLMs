@@ -13,7 +13,7 @@ If you find any mistakes, please don’t hesitate to open an issue, or contact t
 
 ### Introduction
 
-![common event](images/Common full-duplex turn-taking events.png)
+![common event]("images/Common full-duplex turn-taking events.png")
 
 ---
 
