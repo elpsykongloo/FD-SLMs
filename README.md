@@ -127,6 +127,86 @@ We believe that in the age of AI, it is more important than ever to honor the fo
 
 ---
 
+### Safety and Security
+
+Ultra-low latency is a core goal of Full-Duplex Spoken Language Models (FD-SLMs), but it also **shrinks the time budget for safety filtering**. In sequential pipelines, moderation can be applied before output is finalized; in full-duplex, the system may already be speaking while the semantic intent is still unfolding. This creates distinct safety and security risks that must be addressed **architecturally**, not only via post-hoc policy text.
+
+#### Why Safety Becomes Harder in Full-Duplex
+
+Full-duplex systems aim for "cognitive parallelism"—listening, reasoning, and speaking overlap. The same property that improves responsiveness also introduces:
+
+- Reduced lookahead: harmful intent may appear late in an utterance, after generation has started.
+- Streaming commitments: audio emission is irreversible once played (especially for real-time voice agents).
+- Cross-channel prompt injection: adversarial speech can be injected via audio (including instructions hidden in longer contexts).
+- Latency–quality–safety tri-lemma: stronger moderation typically costs compute and time; weak moderation risks unsafe content.
+
+This repository encourages treating safety as a **control loop** that runs alongside generation, rather than a single gate at the end.
+
+We focus on issues most relevant to FD-SLMs:
+
+1. **Toxic / hateful / harassing speech** emitted with low delay.
+2. **Self-harm facilitation** or encouragement in real-time conversational settings.
+3. **Illicit instructions** (e.g., wrongdoing enablement) arising during incremental generation.
+4. **PII leakage** in open-ended dialogue (names, addresses, contact info).
+5. **Audio prompt injection / instruction hijacking** from untrusted speakers or media.
+
+---
+
+#### Architectural Mitigations
+
+Below are implementation patterns that preserve low latency while enabling safety intervention. They are presented in a way that applies to both **Engineered Synchronization** (modular) and **Learned Synchronization** (end-to-end) designs.
+
+##### 1) Micro-Buffer + Streaming Moderatio
+
+Introduce a small, fixed **output buffer** (e.g., 200–500 ms) and run moderation on a sliding window of partial text/audio.
+
+This is a simple and efficient implementation solution. Its advantage is minimal added latency and allows pre-emission filtering. However, at the same time, it cannot catch everything if the buffer is too small and requires a extra streaming classifier.
+
+**How it works**
+- Generator emits partial text (or intermediate semantic units).
+- A lightweight safety model scores the window.
+- If unsafe risk exceeds a threshold, the system:
+  - blocks/halts the next audio chunk,
+  - replaces with a neutral fallback,
+  - optionally asks for clarification.
+
+This is a good default for both synchronization paradigms because it does not require internal access to model weights.
+
+##### 2) Dual-Track Generation: Fast Speaker + Slow Verifier
+
+Run two concurrent tracks:
+- **Fast track** produces a candidate response quickly.
+- **Verifier track** performs deeper checks (policy compliance, PII, sensitive topics) with slightly higher latency.
+
+Only release audio that is either:
+- verified safe, or
+- safe-by-construction (templates, constrained replies) while verifier catches up.
+
+This is particularly effective for **learned synchronization** models where internal states are opaque: you can enforce safety at the release stage without modifying the core model.
+
+##### 3) Interruptible Synthesis
+
+Design the speech output stack to be chunked and cancellable. Synthesize in short frames (e.g., 100–200 ms), and maintain an interrupt path that can immediately:
+  - stop emission,
+  - duck volume,
+  - crossfade to a neutral acknowledgement (“Sorry, I can’t help with that.”),
+  - request rephrase.
+
+This is essential in FD settings because unsafe content may be detected *after* generation begins.
+
+#### Mapping to Synchronization Strategies
+
+- Engineered Synchronization (Modular):
+  - Place moderation at multiple boundaries: ASR text, dialogue state, planned response, and TTS chunks.
+  - Use explicit control signals (pause/interrupt/backchannel) as part of the turn-taking controller.
+
+- Learned Synchronization (End-to-End):
+  - Treat the end-to-end model as a fast proposal generator.
+  - Enforce safety at release time via micro-buffer moderation + interruptible synthesis.
+  - Prefer dual-track verification because internal decoding states may be inaccessible.
+ 
+---
+
 ### Citation
 
 If you find our survey useful for your research, please 📚cite📚 the following paper:
